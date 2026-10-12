@@ -59,7 +59,9 @@ def audit_dataset(processed: Path, seed: int = 42) -> dict:
     checks["balanced_classes"] = all(set(count) == {0, 1} and abs(count[0] - count[1]) <= (0 if name == "all" else 1) for name, count in counts.items())
     keys = full.text.map(dedup_key)
     part_keys = [set(part.text.map(dedup_key)) for part in parts.values()]
-    consistent = set.union(*part_keys) == set(keys) and sum(map(len, parts.values())) == len(full)
+    combined = pd.concat(list(parts.values()), ignore_index=True)
+    columns = ["text", "label", "source", "split"]
+    consistent = full[columns].sort_values(columns).reset_index(drop=True).equals(combined[columns].sort_values(columns).reset_index(drop=True))
     disjoint = all(part_keys[i].isdisjoint(part_keys[j]) for i in range(3) for j in range(i + 1, 3))
     checks["unique_disjoint_keys"] = bool(not keys.duplicated().any() and disjoint and consistent)
 
