@@ -85,6 +85,6 @@ which ignores word interactions and is not a causal explanation.
 
 ## Availability
 
-Classical artifacts and calibration are committed locally. M3 weights remain in
-gitignored models/distilbert/. No Hugging Face upload or Git push has been performed.
+Classical artifacts and calibration are included in the Git repository. M3 weights remain in
+gitignored models/distilbert/. Hugging Face model publication is pending.
 A checkout without local M3 automatically uses M2 and displays a fallback notice.

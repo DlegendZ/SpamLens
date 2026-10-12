@@ -77,8 +77,8 @@ def main() -> None:
                   "The explanation uses leave-one-word-out occlusion (first 60 words, top 8 effects),",
                   "which ignores word interactions and is not a causal explanation.", "",
                   "## Availability", "",
-                  "Classical artifacts and calibration are committed locally. M3 weights remain in",
-                  "gitignored models/distilbert/. No Hugging Face upload or Git push has been performed.",
+                  "Classical artifacts and calibration are included in the Git repository. M3 weights remain in",
+                  "gitignored models/distilbert/. Hugging Face model publication is pending.",
                   "A checkout without local M3 automatically uses M2 and displays a fallback notice.", ""])
     (config.path("models") / "MODEL_CARD.md").write_text("\n".join(lines), encoding="utf-8")
     labels = {"tfidf_nb": "M1: TF-IDF + Naive Bayes", "tfidf_lr": "M2: Word + char TF-IDF + Logistic Regression", "distilbert": "M3: DistilBERT"}

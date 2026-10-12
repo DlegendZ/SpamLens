@@ -21,10 +21,11 @@ Never mark a task complete without its required evidence.
 | T14 | Complete | Team annotated all 24 test errors and 5 train suspects; finalizer generated T10 and human-reviewed error_analysis.md. |
 | T15 | Complete | 26 UI/input tests pass incl. real M3 and forced fallback; four tabs, guarded CSV, session-only history/explanations; desktop/375 px browser QA passed. |
 | T16 | Complete | README and model card generated from metrics; four screenshots; clean local clone runs with isolated CPU runtime and M2 fallback. |
-| T17 | Awaiting publication authorization | M3 weights and model card are ready locally; no Hub upload, Git push, or public deployment has been performed. |
-| T18–T22 | Pending | Follow §17 after T17; current instruction keeps commits local. |
+| T17 | Awaiting model publication | M3 weights and model card are ready locally; Hub upload is not complete. |
+| T18–T22 | Pending | Follow §17 after T17; GitHub publication alone does not complete model/app deployment. |
 
 Validation: Ruff passes and all 82 automated tests pass, including local DistilBERT and AppTest.
 Measured CPU p95 and long-explanation results are recorded in reports/metrics/cpu_latency.json.
 
-Git policy: local commits only. No push or external publication.
+Git policy (2026-10-13): use one branch, main; the project owner authorized merging
+and pushing the implementation. Dataset and transformer-weight exclusions remain.

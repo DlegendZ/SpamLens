@@ -198,4 +198,3 @@ def acceptance_errors(stats: dict) -> list[str]:
             errors.append(f"{name}: {actual} differs from {target} by more than 0.5%")
     return errors
 
-

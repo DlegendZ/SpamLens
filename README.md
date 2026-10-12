@@ -13,8 +13,8 @@ single-message checks, batch CSV, explanations, performance, and a model selecto
 
 See [implementation status](docs/IMPLEMENTATION_STATUS.md),
 [dataset card](docs/DATA_CARD.md), and [model card](models/MODEL_CARD.md).
-All work remains in local commits on `codex/implementation`. The remote repository
-has not received these commits. **Public app URL: pending authorization to publish.**
+Development uses one branch, `main`, in [DlegendZ/SpamLens](https://github.com/DlegendZ/SpamLens).
+**Public app URL: pending model publication and app deployment.**
 
 ## Measured results
 
@@ -35,7 +35,7 @@ deployment part of SC7 is pending.
 
 ## Run the app (PowerShell, Python 3.12)
 
-From a checkout containing these local commits, create a separate app environment.
+From a checkout of `main`, create a separate app environment.
 No datasets or training dependencies are needed. Requirements pin the exact
 scikit-learn version that saved the committed classical artifacts.
 
@@ -110,8 +110,9 @@ or fill the private annotations and finalize the review:
 .\.venv\Scripts\python.exe scripts\10_finalize_error_analysis.py
 ```
 
-Raw/processed datasets and transformer weights stay outside Git. All commits in
-this implementation session remain local; no push or publication is performed.
+Raw/processed datasets and transformer weights stay outside Git. The project owner
+authorized merging and pushing the implementation to `main` on 2026-10-13.
+Hugging Face model publication and Streamlit Cloud deployment remain separate tasks.
 
 The six team identities are recorded in `docs/contribution_log.md`. Roles remain
 blank at the project owner's request. Attribution is in [DATA_LICENSES.md](DATA_LICENSES.md).
