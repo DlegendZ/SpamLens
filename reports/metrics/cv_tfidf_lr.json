@@ -1,0 +1,44 @@
+{
+  "model": "tfidf_lr",
+  "selection_split": "train",
+  "seed": 42,
+  "cv_folds": 5,
+  "best_params": {
+    "classifier__C": 30
+  },
+  "best_macro_f1": 0.9867968852051987,
+  "training_seconds": 21.72025869999925,
+  "candidates": [
+    {
+      "params": {
+        "classifier__C": 1
+      },
+      "mean_macro_f1": 0.983887666199512,
+      "std_macro_f1": 0.0014983433348734426
+    },
+    {
+      "params": {
+        "classifier__C": 4
+      },
+      "mean_macro_f1": 0.9856779103161653,
+      "std_macro_f1": 0.0011206813740370282
+    },
+    {
+      "params": {
+        "classifier__C": 10
+      },
+      "mean_macro_f1": 0.986423910373226,
+      "std_macro_f1": 0.0012820561924218078
+    },
+    {
+      "params": {
+        "classifier__C": 30
+      },
+      "mean_macro_f1": 0.9867968852051987,
+      "std_macro_f1": 0.0009597116207932851
+    }
+  ],
+  "artifact_bytes": 1261057,
+  "sha256_train": "0e04a97681e59d109c5f232b2ebe8b4b6d6f831d522f39e275b7911e63280a99",
+  "sha256_artifact": "1d2631bafadf94054cd9f65d0385c91f35b1f8a363cabf5a3d231b57eae1283d"
+}

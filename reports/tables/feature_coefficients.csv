@@ -1,0 +1,41 @@
+feature,coefficient,direction
+char__ i ,-7.545959836993582,ham
+char__ u ,-4.897090198732116,ham
+char__ . ,-4.177057732009814,ham
+char__.. ,-4.101384313840896,ham
+word__ah,-3.737795227707823,ham
+word__can,-3.731848398077483,ham
+word__sent via,-3.4234512179287524,ham
+word__ok,-3.3149874716664938,ham
+word__got,-3.2414081621799,ham
+word__haha,-3.126739116207556,ham
+word__my,-3.0439138567035022,ham
+char__t. ,-2.963546337853493,ham
+word__is,-2.9293718146794796,ham
+char__...,-2.8364112197490403,ham
+word__call me,-2.646677731480805,ham
+word__so,-2.6010542074889007,ham
+word__lol,-2.5627555550149217,ham
+word__me,-2.5561247816159947,ham
+word__te,-2.517059036656547,ham
+word__please reply,-2.51429053582044,ham
+word__to,4.231364707429576,spam
+word__money,4.241722329141562,spam
+word__reply,4.269752468072024,spam
+word__be,4.783669844290839,spam
+word__sms,4.989055692659481,spam
+word__your,5.808991371108102,spam
+char__url,6.097574113471699,spam
+char__rl] ,6.34747565804761,spam
+char__ [u,6.34747565804761,spam
+char__[url],6.34747565804761,spam
+char__[ur,6.34747565804761,spam
+char__ [ur,6.34747565804761,spam
+char__rl],6.34747565804761,spam
+char__ [url,6.34747565804761,spam
+char__[url,6.34747565804761,spam
+char__url],6.34747565804761,spam
+char__url] ,6.34747565804761,spam
+char__l] ,6.359935651997048,spam
+word__phone,6.586269028149184,spam
+word__url,14.125419630671168,spam
