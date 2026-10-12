@@ -36,12 +36,12 @@ it to 0.0181. The deployment success criteria on unperturbed SMS do not guarante
 robustness under these perturbations. URL-domain swapping leaves predictions
 unchanged for all three models, consistent with URL normalization.
 
-## Human interpretation pending
+## Human-reviewed errors
 
-E7 exports 24 M3 test errors (9 FP, 15 FN) and 5 train-only confident-disagreement
-flags. The latter are not confirmed label mistakes. T10 and the final error
-taxonomy require the team's manual categories and anonymized examples; automated
-category claims would not meet T14.
+The team reviewed all 24 M3 test errors (9 FP, 15 FN) and 5 train-only
+confident-disagreement flags. T10 and reports/error_analysis.md contain their
+categories and anonymized examples. The suspect flags are not confirmed label
+mistakes; the original labels and frozen models remain unchanged.
 
 CPU throughput and long-explanation evidence are recorded separately in
 `reports/metrics/cpu_latency.json`; inspect the measured limit flags in
