@@ -1,0 +1,17 @@
+{
+  "clean_local_clone": true,
+  "raw_processed_data_absent": true,
+  "distilbert_weights_absent": true,
+  "cpu_torch": "2.6.0+cpu",
+  "runtime_only_dependencies": {
+    "ftfy": false,
+    "spacy": false,
+    "matplotlib": false,
+    "pytest": true
+  },
+  "single_prediction": true,
+  "batch_10_rows": true,
+  "download_control": true,
+  "automatic_m2_fallback": true,
+  "exceptions": 0
+}

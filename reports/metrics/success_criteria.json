@@ -37,6 +37,9 @@
   },
   "SC7": {
     "passed": null,
-    "reason": "Application and public deployment await T15/T18; no publication is authorized"
+    "automated_tests_passed": true,
+    "local_app_verified": true,
+    "public_app_verified": false,
+    "reason": "Local Streamlit and tests verified; public deployment awaits authorization at T17/T18"
   }
 }

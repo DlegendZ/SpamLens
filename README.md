@@ -6,34 +6,69 @@ baselines, and fine-tuned DistilBERT. The implementation follows
 
 ## Current status
 
-T01–T12 are implemented and verified. The pinned rebuild matches the reference
-SHA-256 exactly (19,152 balanced messages), and all three trained models have
-validation-only calibration. Quantitative E1–E8 results are generated. T14 requires
-the team's manual error categories before T15 application work.
+The data pipeline, three trained models, validation-only calibration, E1–E8,
+human-reviewed error taxonomy, and Streamlit application are implemented.
+The pinned dataset rebuild matches the reference SHA-256 exactly. The app supports
+single-message checks, batch CSV, explanations, performance, and a model selector.
 
-See [implementation status](docs/IMPLEMENTATION_STATUS.md) and
-[manual review instructions](docs/MANUAL_REVIEW.md). The Streamlit app and public
-deployment are pending; no public URL is available.
+See [implementation status](docs/IMPLEMENTATION_STATUS.md),
+[dataset card](docs/DATA_CARD.md), and [model card](models/MODEL_CARD.md).
+All work remains in local commits on `codex/implementation`. The remote repository
+has not received these commits. **Public app URL: pending authorization to publish.**
 
 ## Measured results
 
 These values come from `reports/tables/T4_main_results.csv` and
 `reports/tables/T5_natural_prevalence.csv`, not the planning guide.
 
+<!-- BEGIN GENERATED RESULTS -->
 | Model | Test macro-F1 | Ham FPR | Spam precision at 13.4% prevalence |
 |---|---:|---:|---:|
 | M1: TF-IDF + Naive Bayes | 0.9673 | 0.70% | 94.61% |
 | M2: Word + char TF-IDF + Logistic Regression | 0.9854 | 0.90% | 95.71% |
 | M3: DistilBERT | 0.9916 | 0.63% | 96.27% |
+<!-- END GENERATED RESULTS -->
 
 Model comparison includes 1,000 seeded bootstrap resamples and exact paired
-McNemar tests. SC1–SC6 pass; SC7 awaits application and deployment verification.
+McNemar tests. SC1–SC6 pass. Automated tests and the local app pass; the public
+deployment part of SC7 is pending.
 
-## Local setup (PowerShell)
+## Run the app (PowerShell, Python 3.12)
 
-Use Python 3.11 or 3.12. Install the appropriate PyTorch build from the
-[official selector](https://pytorch.org/get-started/locally/), then install training
-dependencies in a virtual environment:
+From a checkout containing these local commits, create a separate app environment.
+No datasets or training dependencies are needed. Requirements pin the exact
+scikit-learn version that saved the committed classical artifacts.
+
+```powershell
+python -m venv .venv-app
+.\.venv-app\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv-app\Scripts\python.exe -m streamlit run app\streamlit_app.py --server.port 8502
+```
+
+Open [http://localhost:8502](http://localhost:8502). In the existing training
+environment, use `.\.venv\Scripts\python.exe -m streamlit run app\streamlit_app.py --server.port 8502`.
+
+DistilBERT is selected by default. Its local weights are excluded from Git. A fresh
+checkout uses M2 automatically and shows the fallback notice. To use M3 locally,
+train it with the pipeline below; future Hub publication is pending T17.
+
+On Linux, replace `.venv-app\Scripts\python.exe` with `.venv-app/bin/python`.
+Input/upload results stay in memory; recent checks and explanation caches belong
+only to your browser session. No SMS content is saved to disk, logs, or analytics.
+
+## Screenshots (verified local run)
+
+![Single-message verdict and word occlusion](reports/screenshots/single_prediction.jpg)
+![Batch CSV predictions](reports/screenshots/batch_prediction.jpg)
+![Model performance](reports/screenshots/model_performance.jpg)
+
+The 375 px layout capture is in `reports/screenshots/mobile_375px.jpg`.
+
+## Training and tests
+
+Keep GPU training separate from the app's CPU environment. Use Python 3.12, then
+install the CUDA PyTorch build compatible with your driver using the
+[official selector](https://pytorch.org/get-started/locally/) before training dependencies:
 
 ```powershell
 python -m venv .venv
@@ -42,6 +77,9 @@ python -m venv .venv
 .\.venv\Scripts\ruff.exe check .
 .\.venv\Scripts\python.exe -m pytest -q
 ```
+
+Measured test evidence is in `reports/metrics/test_summary.json` and
+`reports/metrics/test_results.xml`. Tests marked slow use local M3 weights.
 
 ## Run the implemented pipeline
 
@@ -65,7 +103,8 @@ and NLTK resources with `python -c "import nltk; nltk.download('stopwords')"`
 inside the venv. Local training logs record Python 3.12.8 and CUDA PyTorch
 2.6.0+cu124; library versions are in `reports/metrics/environment.json`.
 
-After the team fills both private review queues, finalize T14:
+The team has completed T14 in this checkout. After a new evaluation run, preserve
+or fill the private annotations and finalize the review:
 
 ```powershell
 .\.venv\Scripts\python.exe scripts\10_finalize_error_analysis.py

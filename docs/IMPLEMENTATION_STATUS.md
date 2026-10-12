@@ -19,11 +19,12 @@ Never mark a task complete without its required evidence.
 | T12 | Complete | 7 predictor/explanation tests pass incl. M3; latest CPU p95 M2 1.8 ms, M3 33.2 ms over 200 texts; 60-word M3 explanation median 1.54 s. |
 | T13 | Complete | E1–E8, CIs/McNemar, T4–T11, F5–F9 generated; SC1–SC6 pass; frozen artifact hashes unchanged. |
 | T14 | Complete | Team annotated all 24 test errors and 5 train suspects; finalizer generated T10 and human-reviewed error_analysis.md. |
-| T15 | Complete | 26 UI/input tests pass incl. real M3 and forced fallback; four tabs, guarded CSV, session-only history/explanations. Browser QA pending alongside T16 docs. |
-| T16 | In progress | Update quick start, measured model card, screenshots, and local-run instructions. |
-| T17–T22 | Pending | Follow §17; no remote push/publication is authorized. |
+| T15 | Complete | 26 UI/input tests pass incl. real M3 and forced fallback; four tabs, guarded CSV, session-only history/explanations; desktop/375 px browser QA passed. |
+| T16 | Complete | README and model card generated from metrics; four screenshots; clean local clone runs with isolated CPU runtime and M2 fallback. |
+| T17 | Awaiting publication authorization | M3 weights and model card are ready locally; no Hub upload, Git push, or public deployment has been performed. |
+| T18–T22 | Pending | Follow §17 after T17; current instruction keeps commits local. |
 
-Validation: Ruff passes and all 56 automated tests pass, including local DistilBERT.
+Validation: Ruff passes and all 82 automated tests pass, including local DistilBERT and AppTest.
 Measured CPU p95 and long-explanation results are recorded in reports/metrics/cpu_latency.json.
 
 Git policy: local commits only. No push or external publication.

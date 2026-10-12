@@ -5,6 +5,7 @@ docs/sms_spam_curated_v1_dataset_and_reference_code.zip
 models/distilbert/
 models/checkpoints/
 .venv/
+.venv-app/
 .cache/
 graphify-out/
 __pycache__/
