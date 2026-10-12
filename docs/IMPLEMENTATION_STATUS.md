@@ -19,8 +19,9 @@ Never mark a task complete without its required evidence.
 | T12 | Complete | 7 predictor/explanation tests pass incl. M3; latest CPU p95 M2 1.8 ms, M3 33.2 ms over 200 texts; 60-word M3 explanation median 1.54 s. |
 | T13 | Complete | E1–E8, CIs/McNemar, T4–T11, F5–F9 generated; SC1–SC6 pass; frozen artifact hashes unchanged. |
 | T14 | Complete | Team annotated all 24 test errors and 5 train suspects; finalizer generated T10 and human-reviewed error_analysis.md. |
-| T15 | In progress | Streamlit single/batch checks, explanations, performance, limitations, guards, fallback, and AppTest. |
-| T16–T22 | Pending | Execute sequentially after the preceding acceptance check passes. |
+| T15 | Complete | 26 UI/input tests pass incl. real M3 and forced fallback; four tabs, guarded CSV, session-only history/explanations. Browser QA pending alongside T16 docs. |
+| T16 | In progress | Update quick start, measured model card, screenshots, and local-run instructions. |
+| T17–T22 | Pending | Follow §17; no remote push/publication is authorized. |
 
 Validation: Ruff passes and all 56 automated tests pass, including local DistilBERT.
 Measured CPU p95 and long-explanation results are recorded in reports/metrics/cpu_latency.json.
