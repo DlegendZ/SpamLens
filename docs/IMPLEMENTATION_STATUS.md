@@ -16,7 +16,8 @@ Never mark a task complete without its required evidence.
 | T09 | Complete | Train-only CV macro-F1: M1 0.9702, M2 0.9868; artifacts 0.92/1.26 MB; F4 and T3 generated. |
 | T10 | Complete | Best val macro-F1 0.9899; CUDA batch 32; 216.2 s; local weights/log and F10 saved; Colab notebook ready. |
 | T11 | Complete | All three validation-selected temperatures/thresholds saved; val FPRs ≤1%; 4 calibration tests pass. |
-| T12 | In progress | Predictor contract, batched occlusion, CPU benchmark. |
-| T13–T22 | Pending | Execute sequentially after the preceding acceptance check passes. |
+| T12 | Complete | 7 predictor/explanation tests pass incl. M3; CPU p95 M2 1.4 ms, M3 26.9 ms over 200 texts. |
+| T13 | In progress | Frozen-model E1–E8, statistics, robustness, drift, NLP ablation, and manual review export. |
+| T14–T22 | Pending | Execute sequentially after the preceding acceptance check passes. |
 
 Git policy: local commits only. No push or external publication.

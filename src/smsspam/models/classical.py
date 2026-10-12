@@ -16,9 +16,7 @@ from sklearn.pipeline import FeatureUnion, Pipeline
 from sklearn.preprocessing import FunctionTransformer
 
 from smsspam.config import Config
-from smsspam.data.build import sha256
 from smsspam.preprocessing import normalize
-from smsspam.viz import plt, save_figure
 
 
 def normalize_many(texts: Sequence[str]) -> list[str]:
@@ -47,6 +45,8 @@ def make_lr(max_features: int = 200_000, seed: int = 42) -> Pipeline:
 
 def coefficient_figure(model: Pipeline, reports: Path) -> None:
     """F4 uses coefficients from the selected, training-only fitted M2."""
+    from smsspam.viz import plt, save_figure
+
     names = model.named_steps["features"].get_feature_names_out()
     coefficients = model.named_steps["classifier"].coef_[0]
     low, high = np.argsort(coefficients)[:20], np.argsort(coefficients)[-20:]
@@ -84,6 +84,8 @@ def fit_grid(name: str, model: Pipeline, grid: dict, train: pd.DataFrame, config
 
 
 def train_classical(config: Config) -> dict:
+    from smsspam.data.build import sha256
+
     train_path = config.path("processed") / "train.csv"
     train = pd.read_csv(train_path)
     if not train.split.eq("train").all():
