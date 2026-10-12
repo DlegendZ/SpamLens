@@ -1,0 +1,374 @@
+{
+  "tfidf_nb": {
+    "accuracy": 0.9849757372153789,
+    "macro_f1": 0.9675666194906969,
+    "ham_precision": 0.9909550985248197,
+    "ham_recall": 0.9917025862068966,
+    "ham_f1": 0.9913287014595789,
+    "spam_precision": 0.9461161651504548,
+    "spam_recall": 0.9415041782729805,
+    "spam_f1": 0.943804537521815,
+    "ham_fpr": 0.008297413793103448,
+    "roc_auc": 0.9942801258884834,
+    "pr_auc": 0.9790212125227051,
+    "confusion_matrix": [
+      [
+        9203,
+        77
+      ],
+      [
+        84,
+        1352
+      ]
+    ],
+    "calibration": {
+      "ece": 0.03747860356127105,
+      "brier": 0.022784669921665647,
+      "nll": 0.08434952482497927,
+      "bins": [
+        {
+          "bin": 0,
+          "count": 7973,
+          "mean_probability": 0.007250756094595439,
+          "spam_frequency": 0.0020067728583970904
+        },
+        {
+          "bin": 1,
+          "count": 446,
+          "mean_probability": 0.09497686895323436,
+          "spam_frequency": 0.017937219730941704
+        },
+        {
+          "bin": 2,
+          "count": 204,
+          "mean_probability": 0.1630099302624072,
+          "spam_frequency": 0.014705882352941176
+        },
+        {
+          "bin": 3,
+          "count": 158,
+          "mean_probability": 0.22995706625006454,
+          "spam_frequency": 0.0189873417721519
+        },
+        {
+          "bin": 4,
+          "count": 94,
+          "mean_probability": 0.29551424081413835,
+          "spam_frequency": 0.031914893617021274
+        },
+        {
+          "bin": 5,
+          "count": 75,
+          "mean_probability": 0.36205996514945343,
+          "spam_frequency": 0.06666666666666667
+        },
+        {
+          "bin": 6,
+          "count": 73,
+          "mean_probability": 0.43327417759253956,
+          "spam_frequency": 0.1232876712328767
+        },
+        {
+          "bin": 7,
+          "count": 62,
+          "mean_probability": 0.5030344559877016,
+          "spam_frequency": 0.06451612903225806
+        },
+        {
+          "bin": 8,
+          "count": 39,
+          "mean_probability": 0.5630551159220262,
+          "spam_frequency": 0.10256410256410256
+        },
+        {
+          "bin": 9,
+          "count": 54,
+          "mean_probability": 0.6321281721814869,
+          "spam_frequency": 0.14814814814814814
+        },
+        {
+          "bin": 10,
+          "count": 49,
+          "mean_probability": 0.7041228858626927,
+          "spam_frequency": 0.08163265306122448
+        },
+        {
+          "bin": 11,
+          "count": 42,
+          "mean_probability": 0.7648709550940702,
+          "spam_frequency": 0.2857142857142857
+        },
+        {
+          "bin": 12,
+          "count": 51,
+          "mean_probability": 0.8371522897693428,
+          "spam_frequency": 0.43137254901960786
+        },
+        {
+          "bin": 13,
+          "count": 59,
+          "mean_probability": 0.9031807475666246,
+          "spam_frequency": 0.6101694915254238
+        },
+        {
+          "bin": 14,
+          "count": 1337,
+          "mean_probability": 0.9958193127474247,
+          "spam_frequency": 0.9715781600598354
+        }
+      ]
+    },
+    "threshold": 0.83,
+    "n": 10716,
+    "spam_prevalence": 0.1340052258305338,
+    "false_alarms_per_1000_ham": 8.297413793103448
+  },
+  "tfidf_lr": {
+    "accuracy": 0.9914147069802165,
+    "macro_f1": 0.9816876844796685,
+    "ham_precision": 0.9968635085442353,
+    "ham_recall": 0.9932112068965517,
+    "ham_f1": 0.9950340062614703,
+    "spam_precision": 0.9571428571428572,
+    "spam_recall": 0.9798050139275766,
+    "spam_f1": 0.9683413626978665,
+    "ham_fpr": 0.0067887931034482756,
+    "roc_auc": 0.9990248445154164,
+    "pr_auc": 0.9942431336417218,
+    "confusion_matrix": [
+      [
+        9217,
+        63
+      ],
+      [
+        29,
+        1407
+      ]
+    ],
+    "calibration": {
+      "ece": 0.0103038229821992,
+      "brier": 0.0075515731795908776,
+      "nll": 0.030758804998013964,
+      "bins": [
+        {
+          "bin": 0,
+          "count": 8883,
+          "mean_probability": 0.0032923728305662846,
+          "spam_frequency": 0.0006754474839581223
+        },
+        {
+          "bin": 1,
+          "count": 167,
+          "mean_probability": 0.09403198702052573,
+          "spam_frequency": 0.03592814371257485
+        },
+        {
+          "bin": 2,
+          "count": 63,
+          "mean_probability": 0.16556953733154628,
+          "spam_frequency": 0.047619047619047616
+        },
+        {
+          "bin": 3,
+          "count": 47,
+          "mean_probability": 0.23320164601674748,
+          "spam_frequency": 0.06382978723404255
+        },
+        {
+          "bin": 4,
+          "count": 27,
+          "mean_probability": 0.296424484926839,
+          "spam_frequency": 0.14814814814814814
+        },
+        {
+          "bin": 5,
+          "count": 23,
+          "mean_probability": 0.3704411519642065,
+          "spam_frequency": 0.21739130434782608
+        },
+        {
+          "bin": 6,
+          "count": 19,
+          "mean_probability": 0.42365555226299856,
+          "spam_frequency": 0.05263157894736842
+        },
+        {
+          "bin": 7,
+          "count": 13,
+          "mean_probability": 0.4875102437131463,
+          "spam_frequency": 0.07692307692307693
+        },
+        {
+          "bin": 8,
+          "count": 8,
+          "mean_probability": 0.582452311237524,
+          "spam_frequency": 0.125
+        },
+        {
+          "bin": 9,
+          "count": 13,
+          "mean_probability": 0.6300217377822798,
+          "spam_frequency": 0.23076923076923078
+        },
+        {
+          "bin": 10,
+          "count": 14,
+          "mean_probability": 0.6966109040492393,
+          "spam_frequency": 0.21428571428571427
+        },
+        {
+          "bin": 11,
+          "count": 12,
+          "mean_probability": 0.7650964155409881,
+          "spam_frequency": 0.5
+        },
+        {
+          "bin": 12,
+          "count": 15,
+          "mean_probability": 0.8375415360645478,
+          "spam_frequency": 0.5333333333333333
+        },
+        {
+          "bin": 13,
+          "count": 35,
+          "mean_probability": 0.904755769334639,
+          "spam_frequency": 0.7142857142857143
+        },
+        {
+          "bin": 14,
+          "count": 1377,
+          "mean_probability": 0.997204820068862,
+          "spam_frequency": 0.9883805374001452
+        }
+      ]
+    },
+    "threshold": 0.59,
+    "n": 10716,
+    "spam_prevalence": 0.1340052258305338,
+    "false_alarms_per_1000_ham": 6.788793103448276
+  },
+  "distilbert": {
+    "accuracy": 0.9934677118327734,
+    "macro_f1": 0.9860909204186742,
+    "ham_precision": 0.9983766233766234,
+    "ham_recall": 0.994073275862069,
+    "ham_f1": 0.9962203023758099,
+    "spam_precision": 0.9627371273712737,
+    "spam_recall": 0.9895543175487466,
+    "spam_f1": 0.9759615384615384,
+    "ham_fpr": 0.005926724137931034,
+    "roc_auc": 0.999443572303333,
+    "pr_auc": 0.9967995210670507,
+    "confusion_matrix": [
+      [
+        9225,
+        55
+      ],
+      [
+        15,
+        1421
+      ]
+    ],
+    "calibration": {
+      "ece": 0.007247435028185068,
+      "brier": 0.005321201451080749,
+      "nll": 0.0252210607753716,
+      "bins": [
+        {
+          "bin": 0,
+          "count": 9186,
+          "mean_probability": 0.005078465024059881,
+          "spam_frequency": 0.001088613106901807
+        },
+        {
+          "bin": 1,
+          "count": 25,
+          "mean_probability": 0.09879818965472525,
+          "spam_frequency": 0.04
+        },
+        {
+          "bin": 2,
+          "count": 11,
+          "mean_probability": 0.15355507047311764,
+          "spam_frequency": 0.18181818181818182
+        },
+        {
+          "bin": 3,
+          "count": 8,
+          "mean_probability": 0.23664324992059577,
+          "spam_frequency": 0.125
+        },
+        {
+          "bin": 4,
+          "count": 5,
+          "mean_probability": 0.2968772186320398,
+          "spam_frequency": 0.0
+        },
+        {
+          "bin": 5,
+          "count": 3,
+          "mean_probability": 0.3501189017186936,
+          "spam_frequency": 0.0
+        },
+        {
+          "bin": 6,
+          "count": 2,
+          "mean_probability": 0.41703741085813156,
+          "spam_frequency": 0.5
+        },
+        {
+          "bin": 7,
+          "count": 6,
+          "mean_probability": 0.4847999274634706,
+          "spam_frequency": 0.16666666666666666
+        },
+        {
+          "bin": 8,
+          "count": 2,
+          "mean_probability": 0.569652513331461,
+          "spam_frequency": 0.0
+        },
+        {
+          "bin": 9,
+          "count": 5,
+          "mean_probability": 0.6385775735125486,
+          "spam_frequency": 0.2
+        },
+        {
+          "bin": 10,
+          "count": 5,
+          "mean_probability": 0.7001408683520165,
+          "spam_frequency": 0.2
+        },
+        {
+          "bin": 11,
+          "count": 5,
+          "mean_probability": 0.7842085440531827,
+          "spam_frequency": 0.6
+        },
+        {
+          "bin": 12,
+          "count": 6,
+          "mean_probability": 0.851135308703132,
+          "spam_frequency": 0.3333333333333333
+        },
+        {
+          "bin": 13,
+          "count": 12,
+          "mean_probability": 0.9087041369006106,
+          "spam_frequency": 0.5
+        },
+        {
+          "bin": 14,
+          "count": 1435,
+          "mean_probability": 0.9937031847336794,
+          "spam_frequency": 0.9804878048780488
+        }
+      ]
+    },
+    "threshold": 0.45,
+    "n": 10716,
+    "spam_prevalence": 0.1340052258305338,
+    "false_alarms_per_1000_ham": 5.926724137931034
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "SC1": {
+    "value": 0.9916463130960689,
+    "target": 0.98,
+    "operator": ">=",
+    "passed": true
+  },
+  "SC2": {
+    "value": 0.006263048016701462,
+    "target": 0.01,
+    "operator": "<=",
+    "passed": true
+  },
+  "SC3": {
+    "value": 0.9627371273712737,
+    "target": 0.93,
+    "operator": ">=",
+    "passed": true
+  },
+  "SC4": {
+    "value": 5.6223687374767304e-14,
+    "target": 0.05,
+    "operator": "<",
+    "passed": true
+  },
+  "SC5": {
+    "value": 0.004225525989277721,
+    "target": 0.03,
+    "operator": "<=",
+    "passed": true
+  },
+  "SC6": {
+    "value": 33.16988999740715,
+    "target": 500,
+    "operator": "<=",
+    "passed": true
+  },
+  "SC7": {
+    "passed": null,
+    "reason": "Application and public deployment await T15/T18; no publication is authorized"
+  }
+}

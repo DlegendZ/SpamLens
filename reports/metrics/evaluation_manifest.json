@@ -1,0 +1,13 @@
+{
+  "seed": 42,
+  "sha256_artifacts": {
+    "models\\tfidf_nb.joblib": "289613f189a4be658fe517ccf84065a634815c846a4865334aaaf79abe78ecdf",
+    "models\\tfidf_lr.joblib": "1d2631bafadf94054cd9f65d0385c91f35b1f8a363cabf5a3d231b57eae1283d",
+    "models\\calibration.json": "c0e39e8456680becd640f7996fdef659ce26e8decdf8fade4f3a72ad89130e24",
+    "models\\distilbert\\model.safetensors": "44b4befffe72375d7a2bb6a41d49ddcb528de87288b6cded5ea2948083adc06c"
+  },
+  "sha256_train": "0e04a97681e59d109c5f232b2ebe8b4b6d6f831d522f39e275b7911e63280a99",
+  "sha256_test": "98a6372bdde1110ddab1475847a8539d85bbeb1af673b9b503120bef80be16ec",
+  "models_changed": false,
+  "E7_status": "human categories pending; T10 is intentionally not fabricated"
+}

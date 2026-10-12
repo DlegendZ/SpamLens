@@ -1,0 +1,20 @@
+{
+  "tfidf_nb_vs_tfidf_lr": {
+    "a_correct_b_wrong": 13,
+    "a_wrong_b_correct": 65,
+    "p_value": 1.807703105408552e-09,
+    "method": "exact binomial, two-sided"
+  },
+  "tfidf_nb_vs_distilbert": {
+    "a_correct_b_wrong": 12,
+    "a_wrong_b_correct": 82,
+    "p_value": 5.6223687374767304e-14,
+    "method": "exact binomial, two-sided"
+  },
+  "tfidf_lr_vs_distilbert": {
+    "a_correct_b_wrong": 10,
+    "a_wrong_b_correct": 28,
+    "p_value": 0.0050976432976312935,
+    "method": "exact binomial, two-sided"
+  }
+}

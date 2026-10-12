@@ -1,0 +1,8 @@
+{
+  "deployed_model": "distilbert",
+  "test_errors": 24,
+  "false_positives": 9,
+  "false_negatives": 15,
+  "train_suspects": 5,
+  "manual_review_complete": false
+}

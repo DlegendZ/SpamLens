@@ -1,0 +1,19 @@
+{
+  "frozen_artifact_hashes_unchanged": true,
+  "predictions": {
+    "tfidf_nb": {
+      "confusion_matrix_unchanged": true,
+      "macro_f1_unchanged": true
+    },
+    "tfidf_lr": {
+      "confusion_matrix_unchanged": true,
+      "macro_f1_unchanged": true
+    },
+    "distilbert": {
+      "confusion_matrix_unchanged": true,
+      "macro_f1_unchanged": true
+    }
+  },
+  "explanation_60_words_ms": 1538.4304999970482,
+  "explanation_under_2_seconds": true
+}

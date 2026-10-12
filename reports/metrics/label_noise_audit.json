@@ -1,0 +1,7 @@
+{
+  "n_train": 13406,
+  "n_suspects": 5,
+  "suspect_fraction": 0.00037296732806206176,
+  "confidence_cutoff": 0.99,
+  "method": "train-only five-fold out-of-fold M2 confident disagreement; published labels unchanged"
+}

@@ -16,8 +16,12 @@ Never mark a task complete without its required evidence.
 | T09 | Complete | Train-only CV macro-F1: M1 0.9702, M2 0.9868; artifacts 0.92/1.26 MB; F4 and T3 generated. |
 | T10 | Complete | Best val macro-F1 0.9899; CUDA batch 32; 216.2 s; local weights/log and F10 saved; Colab notebook ready. |
 | T11 | Complete | All three validation-selected temperatures/thresholds saved; val FPRs ≤1%; 4 calibration tests pass. |
-| T12 | Complete | 7 predictor/explanation tests pass incl. M3; CPU p95 M2 1.4 ms, M3 26.9 ms over 200 texts. |
-| T13 | In progress | Frozen-model E1–E8, statistics, robustness, drift, NLP ablation, and manual review export. |
-| T14–T22 | Pending | Execute sequentially after the preceding acceptance check passes. |
+| T12 | Complete | 7 predictor/explanation tests pass incl. M3; latest CPU p95 M2 1.8 ms, M3 33.2 ms over 200 texts; 60-word M3 explanation median 1.54 s. |
+| T13 | Quantitative results complete; E7 depends on T14 | E1–E6/E8, CIs/McNemar, T4–T9/T11, F5–F9 generated; SC1–SC6 pass; frozen artifact hashes unchanged. T10 awaits manual categories. |
+| T14 | Awaiting team annotations | 24 test errors (9 FP / 15 FN) and 5 train suspects exported privately; follow MANUAL_REVIEW.md. |
+| T15–T22 | Pending | Do not start before the preceding task's DoD is met (§17). App and deployment are not complete. |
+
+Validation: Ruff passes and all 56 automated tests pass, including local DistilBERT.
+Measured CPU p95 and long-explanation results are recorded in reports/metrics/cpu_latency.json.
 
 Git policy: local commits only. No push or external publication.

@@ -1,5 +1,6 @@
 """Lightweight raw-logit model loading shared by calibration and inference."""
 
+import os
 from collections.abc import Sequence
 
 import joblib
@@ -26,7 +27,7 @@ class RawScorer:
             from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
             self.torch = torch
-            torch.set_num_threads(4)
+            torch.set_num_threads(min(config.values.get("inference", {}).get("cpu_threads", 12), os.cpu_count() or 1))
             local = config.path("models") / "distilbert"
             location = str(local) if (local / "config.json").exists() else config.values.get("hf_model_id")
             if not location:

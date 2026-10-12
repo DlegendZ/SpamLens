@@ -33,6 +33,7 @@ distilbert:
   patience: 1
   fp16: true
 calibration: {max_ham_fpr: 0.01, min_spam_recall_low: 0.99, ece_bins: 15}
+inference: {cpu_threads: 12}
 app:
   default_model: distilbert
   max_chars: 1000
