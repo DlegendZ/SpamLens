@@ -1,0 +1,8 @@
+curation_step,removed,removed_ham,removed_spam
+too_short,266,264,2
+format_stripped_artifact,14876,1549,13327
+lemmatisation_artifact,2648,14,2634
+non_latin_script,1,1,0
+conflicting_labels,11,6,5
+near_duplicates,6335,4954,1381
+empty_key,0,0,0

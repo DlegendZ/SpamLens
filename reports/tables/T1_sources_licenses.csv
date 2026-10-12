@@ -1,0 +1,3 @@
+source,license,citation,url
+uci_sms_spam_collection,CC BY 4.0,"Almeida and Hidalgo (2011), DOI 10.24432/C5CC84",https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip
+super_sms_dataset,Research release; no explicit license; academic policy; no redistribution,"Salman et al. (2024), DOI 10.1109/ACCESS.2024.3364671",https://raw.githubusercontent.com/smspamresearch/spstudy/a0889f36fb59e23a7f853a6932485d93d18b8afc/Data/super_sms_dataset.csv

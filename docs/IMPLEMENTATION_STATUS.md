@@ -9,7 +9,11 @@ Never mark a task complete without its required evidence.
 | T02 | Complete | environment.json: Python 3.12.8, CUDA 12.4, RTX 3050; spaCy/NLTK resources installed. |
 | T03 | Complete | 23 normalizer tests pass, including idempotency and preserved alphanumeric codes. |
 | T04 | Complete | Both source hashes match; UCI has 5,574 rows and Super 67,010; 28 tests pass. |
-| T05 | In progress | Port reference curation, verify counts and deterministic output. |
-| T06–T22 | Pending | Execute sequentially after the preceding acceptance check passes. |
+| T05 | Complete | Counts/removals match exactly; 19,152 rows; output SHA-256 matches cda5cbb3…fa19aa; 7 build tests pass. |
+| T06 | Complete | data_audit.json: all eight invariants pass. |
+| T07 | Complete | DATA_CARD.md generated from measured statistics; DATA_LICENSES.md reviewed against §4. |
+| T08 | Complete with dependency exception | F1–F3 and T1–T2 generated; F4 comes from selected M2 at T09 (DECISIONS.md). |
+| T09 | In progress | Train-only five-fold grids; joblib artifacts, F4, CV metrics, and T3. |
+| T10–T22 | Pending | Execute sequentially after the preceding acceptance check passes. |
 
 Git policy: local commits only. No push or external publication.

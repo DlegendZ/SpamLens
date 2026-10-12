@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "checks": {
+    "valid_schema": true,
+    "balanced_classes": true,
+    "unique_disjoint_keys": true,
+    "no_publisher_artifacts": true,
+    "artifact_accuracy_at_most_056": true,
+    "mask_accuracy_at_most_055": true,
+    "source_accuracy_at_most_056": true,
+    "unused_ham_disjoint": true
+  },
+  "diagnostics": {
+    "artifact_counts": {
+      "format_stripped": 0,
+      "lemmatisation_p1": 0,
+      "ptb_contraction": 0,
+      "ptb_quotes": 0,
+      "mojibake": 0
+    },
+    "artifact_only": {
+      "accuracy": 0.5481935945117234,
+      "std": 0.0018461610456697176,
+      "folds": [
+        0.5447663795353693,
+        0.5478987209605847,
+        0.5488250652741514,
+        0.549869451697128,
+        0.5496083550913838
+      ]
+    },
+    "normalized_mask_only": {
+      "accuracy": 0.5,
+      "std": 8.254444427480889e-05,
+      "folds": [
+        0.49986948577394935,
+        0.5001305142260506,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "source_only": {
+      "accuracy": 0.527151484420418,
+      "std": 0.004767291780100142,
+      "folds": [
+        0.5184025058731402,
+        0.5306708431219003,
+        0.5258485639686684,
+        0.5295039164490861,
+        0.5313315926892951
+      ]
+    }
+  },
+  "class_counts": {
+    "all": {
+      "1": 9576,
+      "0": 9576
+    },
+    "train": {
+      "1": 6703,
+      "0": 6703
+    },
+    "val": {
+      "1": 1437,
+      "0": 1436
+    },
+    "test": {
+      "0": 1437,
+      "1": 1436
+    }
+  },
+  "sha256_corpus": "cda5cbb3fb8bf44619803a549ea229c67f41701489454789878969f085fa19aa",
+  "seed": 42,
+  "note": "Diagnostic CV is explicitly required by \u00a75.4. It does not tune the predictive models."
+}

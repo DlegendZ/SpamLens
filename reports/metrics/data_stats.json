@@ -1,0 +1,90 @@
+{
+  "raw": {
+    "uci": {
+      "0": 4827,
+      "1": 747
+    },
+    "super": {
+      "0": 40830,
+      "1": 26178
+    }
+  },
+  "steps": {
+    "too_short": {
+      "removed": 266,
+      "removed_ham": 264,
+      "removed_spam": 2
+    },
+    "format_stripped_artifact": {
+      "removed": 14876,
+      "removed_ham": 1549,
+      "removed_spam": 13327
+    },
+    "lemmatisation_artifact": {
+      "removed": 2648,
+      "removed_ham": 14,
+      "removed_spam": 2634
+    },
+    "non_latin_script": {
+      "removed": 1,
+      "removed_ham": 1,
+      "removed_spam": 0
+    },
+    "conflicting_labels": {
+      "removed": 11,
+      "removed_ham": 6,
+      "removed_spam": 5
+    },
+    "near_duplicates": {
+      "removed": 6335,
+      "removed_ham": 4954,
+      "removed_spam": 1381
+    },
+    "empty_key": {
+      "removed": 0,
+      "removed_ham": 0,
+      "removed_spam": 0
+    }
+  },
+  "after_cleaning": {
+    "0": {
+      "super_sms_dataset": 34398,
+      "uci_sms_spam_collection": 4471
+    },
+    "1": {
+      "super_sms_dataset": 8980,
+      "uci_sms_spam_collection": 596
+    }
+  },
+  "sha256_inputs": {
+    "uci": "7d039a24a6083ed9ef0f806ebad56bbb976e3aeb8de05669173bfdc4996c239d",
+    "super": "ba825b468b59fb229cc56c15a6c2d14d593a88051d54ea2f402166bf2ab894d3"
+  },
+  "final": {
+    "total": 19152,
+    "split_label": {
+      "0": {
+        "test": 1437,
+        "train": 6703,
+        "val": 1436
+      },
+      "1": {
+        "test": 1436,
+        "train": 6703,
+        "val": 1437
+      }
+    },
+    "source_label": {
+      "0": {
+        "super_sms_dataset": 8460,
+        "uci_sms_spam_collection": 1116
+      },
+      "1": {
+        "super_sms_dataset": 8980,
+        "uci_sms_spam_collection": 596
+      }
+    },
+    "unused_ham_pool": 29293
+  },
+  "sha256_output": "cda5cbb3fb8bf44619803a549ea229c67f41701489454789878969f085fa19aa"
+}
