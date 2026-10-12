@@ -15,7 +15,8 @@ Never mark a task complete without its required evidence.
 | T08 | Complete with dependency exception | F1–F3 and T1–T2 generated; F4 comes from selected M2 at T09 (DECISIONS.md). |
 | T09 | Complete | Train-only CV macro-F1: M1 0.9702, M2 0.9868; artifacts 0.92/1.26 MB; F4 and T3 generated. |
 | T10 | Complete | Best val macro-F1 0.9899; CUDA batch 32; 216.2 s; local weights/log and F10 saved; Colab notebook ready. |
-| T11 | In progress | Temperature and thresholds selected exclusively on validation. |
-| T12–T22 | Pending | Execute sequentially after the preceding acceptance check passes. |
+| T11 | Complete | All three validation-selected temperatures/thresholds saved; val FPRs ≤1%; 4 calibration tests pass. |
+| T12 | In progress | Predictor contract, batched occlusion, CPU benchmark. |
+| T13–T22 | Pending | Execute sequentially after the preceding acceptance check passes. |
 
 Git policy: local commits only. No push or external publication.
